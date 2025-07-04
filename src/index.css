@@ -1,13 +1,183 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#card {
+  width: 400px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+  margin: 20px;
+  float: left;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+#card img {
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+#card .card-body {
+  padding: 20px;
+}
+
+#card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#card .card-text {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+#card .btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+#card .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+#btn1{
+  margin-left: 15%;
+}
+
+.btn {
+  margin-right: 20px;
+  width: 150px;
+  padding: 10px 20px;
+  background: #0ff; /* Neon color (cyan) */
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px #0ff,
+              0 0 20px #0ff,
+              0 0 40px #0ff,
+              0 0 80px #0ff;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px #0ff,
+              0 0 40px #0ff,
+              0 0 80px #0ff,
+              0 0 100px #0ff;
+  background: #1ff;
+}
+
+
+#img1{
+  height: 200px;
+  width: 200px;
+  margin-left: 77px;
+}
+
+#loadinga{
+  margin-left: 200px;
+}
+
+
+
+/* Reset defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ 
+/* Container styling */
+form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  color: #333;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Checkbox and label styling */
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+  accent-color: #4caf50;
+}
+
+label,
+.checkbox-label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Button styling */
+button {
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+/* Data preview */
+.form-data-display {
+  margin-top: 15px;
+  font-size: 12px;
+  word-wrap: break-word;
+  color: #ccc;
+  text-align: center;
 }
