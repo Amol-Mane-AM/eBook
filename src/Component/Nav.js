@@ -16,8 +16,8 @@ function Nav() {
   //  if(theme === 'light')
   //   { 
   //       themeStyle = {
-  //           color: "red",
-  //           backgroundColor: "red",
+  //           color: "violet",
+  //           backgroundColor: "violet",
   //           fontSize: "16px",
   //           padding: "10px",
   //       };
