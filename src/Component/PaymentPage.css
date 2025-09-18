@@ -1,0 +1,48 @@
+.payment-container {
+    max-width: 600px;
+}
+
+.payment-card {
+    border-radius: 16px;
+    background: #ffffff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.payment-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 123, 255, 0.15);
+}
+
+.amount {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.btn-primary {
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+select {
+    border-radius: 8px;
+}
+
+@media (max-width: 576px) {
+    .payment-container {
+        padding: 10px;
+    }
+
+    .payment-card {
+        padding: 20px 15px;
+    }
+
+    .amount {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+    }
+}
